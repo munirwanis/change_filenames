@@ -9,5 +9,7 @@ if [ "" = "$name_to_change" ]; then
     echo "./multiple_filename_changer.sh Jonny John txt"
     echo "Will change all .txt files on the folder that contains the word Jonny to Jonh."
 else
-    for f in *.${file_type}; do mv "$f" "`echo $f | sed s/${name_to_change}/${new_name}/`"; done
+    for f in *.${file_type}; do
+        echo "Renaming $f" 
+        mv "$f" "`echo $f | sed s/${name_to_change}/${new_name}/`"; done
 fi
