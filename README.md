@@ -6,4 +6,4 @@ Example on how to use:
 ./multiple_filename_changer.sh Jonny John txt
 ```
 
-Will change all .txt files on the folder that contains the word Jonny to Jonh.
+Will change all .txt files on the folder that contains the word Jonny to John.
